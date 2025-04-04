@@ -1,10 +1,15 @@
+import os
 import socket
 import threading
 import time
 import random
+import dotenv
 
-SERVER_HOST = "127.0.0.1"
-SERVER_PORT = 12345
+dotenv.load_dotenv()
+
+SERVER_HOST = os.getenv("SERVER_HOST")
+SERVER_PORT = os.getenv("SERVER_PORT")
+
 ENTRY_EXIT_POINTS = 18
 TOLL_BOOTH_LIMITS = {"plaza": 6, "regular": 4}
 

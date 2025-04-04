@@ -1,9 +1,10 @@
 import socket
 import threading
+import dotenv
 
 # Server configurations
 HOST = "0.0.0.0"
-PORT = 12345
+PORT = 31194
 
 # Toll configuration
 TOLL_RATE_PER_KM = 2
